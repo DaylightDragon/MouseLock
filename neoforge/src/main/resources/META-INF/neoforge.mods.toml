@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "mouselock"
+version = "${version}"
+displayName = "Mouse Lock"
+authors = "Me!"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.mouselock]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.3.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mouselock]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "mouselock.mixins.json"
