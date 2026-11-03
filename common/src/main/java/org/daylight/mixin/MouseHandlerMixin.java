@@ -1,5 +1,6 @@
 package org.daylight.mixin;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.MouseHandler;
 import org.daylight.data.State;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,7 +16,7 @@ public class MouseHandlerMixin {
             cancellable = true
     )
     public void onMove(final long handle, final double xpos, final double ypos, final double xrel, final double yrel, CallbackInfo ci) {
-        if(State.MOUSE_LOCK_ACTIVE) {
+        if(State.MOUSE_LOCK_ACTIVE && Minecraft.getInstance().gui.screen() == null) {
             ci.cancel();
         }
     }

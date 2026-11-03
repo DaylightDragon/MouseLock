@@ -18,7 +18,7 @@ public class ModKeybindListeners {
     public static void initCommonKeybinds() {
         MOUSE_LOCK_SWITCH_KEY = new KeyMapping(
                 "key." + MouseLock.MOD_ID + ".toggle_mouse_lock",
-                InputConstants.KEY_F,
+                InputConstants.UNKNOWN.getValue(),
                 KEYBIND_CATEGORY
         );
     }
