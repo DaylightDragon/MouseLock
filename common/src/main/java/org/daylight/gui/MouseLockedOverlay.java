@@ -3,14 +3,14 @@ package org.daylight.gui;
 import com.mojang.blaze3d.platform.Window;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import org.daylight.config.MouseLockConfig;
 import org.daylight.data.State;
 import org.daylight.util.graphics.DrawingUtil;
 
 public class MouseLockedOverlay {
-    public static void drawIfNeeded(GuiGraphicsExtractor graphics) {
+    public static void drawIfNeeded(GuiGraphics graphics) {
         if (State.MOUSE_LOCK_ACTIVE && Minecraft.getInstance().level != null) {
             Window window = Minecraft.getInstance().getWindow();
             int width  = window.getGuiScaledWidth();
