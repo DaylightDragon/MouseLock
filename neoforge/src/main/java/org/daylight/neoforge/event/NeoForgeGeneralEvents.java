@@ -14,10 +14,7 @@ import org.daylight.neoforge.NeoForgeCommands;
 public class NeoForgeGeneralEvents {
     @SubscribeEvent
     public static void onRegisterKeyMappings(RegisterKeyMappingsEvent event) {
-        ModKeybindListeners.KEYBIND_CATEGORY = new KeyMapping.Category(ResourceLocation.fromNamespaceAndPath(MouseLock.MOD_ID, "main"));
         ModKeybindListeners.initCommonKeybinds();
-
-        event.registerCategory(ModKeybindListeners.KEYBIND_CATEGORY);
 
         event.register(ModKeybindListeners.MOUSE_LOCK_SWITCH_KEY);
     }

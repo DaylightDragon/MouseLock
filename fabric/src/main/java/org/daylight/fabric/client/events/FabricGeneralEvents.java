@@ -21,6 +21,6 @@ public class FabricGeneralEvents {
         State.SHOULD_OPEN_SETTINGS = false;
 
         Screen dummyParent = new DummyScreen();
-        Minecraft.getInstance().setScreenAndShow(new ConfigurationScreen(MouseLock.MOD_ID, dummyParent)); // shouldn't be null or dummy screen if ever called not from chat
+        Minecraft.getInstance().forceSetScreen(new ConfigurationScreen(MouseLock.MOD_ID, dummyParent)); // shouldn't be null or dummy screen if ever called not from chat
     }
 }

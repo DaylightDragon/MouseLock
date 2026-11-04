@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[10,)"
+loaderVersion = "[9,)"
 issueTrackerURL = "https://github.com/DaylightDragon/MouseLock/issues"
 license = "MIT"
 
@@ -17,14 +17,14 @@ bannerFile = "assets/mouselock/banner.png"
 [[dependencies.mouselock]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.9,)"
+versionRange = "[21.8,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.mouselock]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.9,)"
+versionRange = "[1.21.8,)"
 ordering = "NONE"
 side = "BOTH"
 

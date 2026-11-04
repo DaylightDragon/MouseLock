@@ -10,13 +10,9 @@ import org.daylight.util.hotkey.TickBasedHotkeyListener;
 
 public class FabricKeybinds {
     public static void init() {
-        ModKeybindListeners.KEYBIND_CATEGORY = new KeyMapping.Category(ResourceLocation.fromNamespaceAndPath(MouseLock.MOD_ID, "main"));
         ModKeybindListeners.initCommonKeybinds();
 
         KeyBindingHelper.registerKeyBinding(ModKeybindListeners.MOUSE_LOCK_SWITCH_KEY);
-
-        ModKeybindListeners.KEYBIND_CATEGORY = KeyMapping.Category.register(ModKeybindListeners.KEYBIND_CATEGORY.id());
-
 
         initCustomKeybinds();
 

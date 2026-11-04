@@ -11,7 +11,6 @@ import java.util.function.Supplier;
 public class ModKeybindListeners {
     public static final Supplier<Boolean> DEFAULT_VALIDATOR = () -> Minecraft.getInstance().screen == null;
 
-    public static KeyMapping.Category KEYBIND_CATEGORY;
 
     public static KeyMapping MOUSE_LOCK_SWITCH_KEY;
 
@@ -19,7 +18,7 @@ public class ModKeybindListeners {
         MOUSE_LOCK_SWITCH_KEY = new KeyMapping(
                 "key." + MouseLock.MOD_ID + ".toggle_mouse_lock",
                 InputConstants.UNKNOWN.getValue(),
-                KEYBIND_CATEGORY
+                "key.category." + MouseLock.MOD_ID + ".main"
         );
     }
 
