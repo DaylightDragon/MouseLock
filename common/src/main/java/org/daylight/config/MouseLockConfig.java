@@ -5,7 +5,7 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public class MouseLockConfig {
     public static final ModConfigSpec SPEC;
 
-    public static final ModConfigSpec.DoubleValue TEXT_SIZE;
+    public static final ModConfigSpec.IntValue TEXT_SIZE;
     public static final ModConfigSpec.IntValue TEXT_HORIZONTAL_POS;
     public static final ModConfigSpec.IntValue TEXT_VERTICAL_POS;
     public static final ModConfigSpec.BooleanValue REACT_TO_HOTBAR_HEIGHT;
@@ -17,8 +17,8 @@ public class MouseLockConfig {
 //        builder.push("overlay");
 
         TEXT_SIZE = builder
-                .comment("Scale multiplier for the \"Mouse Locked\" overlay text.")
-                .defineInRange("textSize", 1d, 0.5d, 2d);
+                .comment("Scale percent multiplier for the \"Mouse Locked\" overlay text.")
+                .defineInRange("textSize", 100, 20, 200);
 
         TEXT_HORIZONTAL_POS = builder
                 .comment("Horizontal position of the overlay text")

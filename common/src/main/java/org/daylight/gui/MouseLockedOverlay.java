@@ -4,6 +4,7 @@ import com.mojang.blaze3d.platform.Window;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import org.daylight.config.MouseLockConfig;
 import org.daylight.data.State;
 import org.daylight.util.graphics.DrawingUtil;
 
@@ -19,13 +20,15 @@ public class MouseLockedOverlay {
 
             int textWidth = font.width(text);
 
-            int x = (width - textWidth) / 2;
-            int y = height - 22 - 18 - font.lineHeight;
-            if (Minecraft.getInstance().gameMode != null && !Minecraft.getInstance().gameMode.canHurtPlayer()) {
+            int x = (int) ((width - textWidth) * ((float) MouseLockConfig.TEXT_HORIZONTAL_POS.get() / 100));
+            int y = (int) ((height - font.lineHeight) * ((float) MouseLockConfig.TEXT_VERTICAL_POS.get() / 100)); // height - 22 - 18 - font.lineHeight;
+            if (MouseLockConfig.REACT_TO_HOTBAR_HEIGHT.get() &&
+                    Minecraft.getInstance().gameMode != null &&
+                    !Minecraft.getInstance().gameMode.canHurtPlayer()) {
                 y += 14;
             }
 
-            DrawingUtil.drawCenteredText(graphics, text, font, x, y, 1f, textWidth);
+            DrawingUtil.drawCenteredText(graphics, text, font, x, y, (float) MouseLockConfig.TEXT_SIZE.get() / 100, textWidth);
         }
     }
 }
