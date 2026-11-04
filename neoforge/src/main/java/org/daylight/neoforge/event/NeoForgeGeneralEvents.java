@@ -1,7 +1,7 @@
 package org.daylight.neoforge.event;
 
 import net.minecraft.client.KeyMapping;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterClientCommandsEvent;
@@ -14,7 +14,7 @@ import org.daylight.neoforge.NeoForgeCommands;
 public class NeoForgeGeneralEvents {
     @SubscribeEvent
     public static void onRegisterKeyMappings(RegisterKeyMappingsEvent event) {
-        ModKeybindListeners.KEYBIND_CATEGORY = new KeyMapping.Category(Identifier.fromNamespaceAndPath(MouseLock.MOD_ID, "main"));
+        ModKeybindListeners.KEYBIND_CATEGORY = new KeyMapping.Category(ResourceLocation.fromNamespaceAndPath(MouseLock.MOD_ID, "main"));
         ModKeybindListeners.initCommonKeybinds();
 
         event.registerCategory(ModKeybindListeners.KEYBIND_CATEGORY);
