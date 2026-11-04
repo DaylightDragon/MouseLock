@@ -8,10 +8,10 @@ public class DrawingUtil {
         float centerX = x + textWidth / 2f;
         float centerY = y + font.lineHeight / 2f;
 
-        graphics.pose().pushMatrix();
-        graphics.pose().translate(centerX, centerY);
-        graphics.pose().scale(scale, scale);
+        graphics.pose().pushPose();
+        graphics.pose().translate(centerX, centerY, 0);
+        graphics.pose().scale(scale, scale, scale);
         graphics.drawString(font, text, -textWidth / 2, -font.lineHeight / 2, 0xFFFFD966);
-        graphics.pose().popMatrix();
+        graphics.pose().popPose();
     }
 }
