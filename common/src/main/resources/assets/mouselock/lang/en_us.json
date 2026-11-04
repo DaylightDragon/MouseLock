@@ -2,6 +2,8 @@
   "key.category.mouselock.main": "Mouse Locking",
   "key.mouselock.toggle_mouse_lock": "Toggle Mouse Lock",
 
+  "mouselock.overlay.text.mouseLocked": "Mouse Locked",
+
   "mouselock.configuration.textSize": "Text Size",
   "mouselock.configuration.textHorizontalPos": "Text Horizontal Position",
   "mouselock.configuration.textVerticalPos": "Text Vertical Position",

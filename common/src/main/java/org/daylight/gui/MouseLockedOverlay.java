@@ -4,6 +4,7 @@ import com.mojang.blaze3d.platform.Window;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.network.chat.Component;
 import org.daylight.config.MouseLockConfig;
 import org.daylight.data.State;
 import org.daylight.util.graphics.DrawingUtil;
@@ -15,7 +16,8 @@ public class MouseLockedOverlay {
             int width  = window.getGuiScaledWidth();
             int height = window.getGuiScaledHeight();
 
-            String text = "Mouse Locked";
+            Component textComponent = Component.translatable("mouselock.overlay.text.mouseLocked");
+            String text = textComponent.getString();
             Font font = Minecraft.getInstance().font;
 
             int textWidth = font.width(text);

@@ -2,6 +2,8 @@
   "key.category.mouselock.main": "Блокировка движения мыши",
   "key.mouselock.toggle_mouse_lock": "Включить/выключить блокировку мыши",
 
+  "mouselock.overlay.text.mouseLocked": "Мышь заблокирована",
+
   "mouselock.configuration.textSize": "Размер текста-оверлея",
   "mouselock.configuration.textHorizontalPos": "Положение текста по горизонтали",
   "mouselock.configuration.textVerticalPos": "Положение текста по вертикали",
