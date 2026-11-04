@@ -8,7 +8,6 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import org.daylight.MouseLock;
 import org.daylight.config.MouseLockConfig;
-import org.daylight.neoforge.event.InputEvents;
 
 @Mod(MouseLock.MOD_ID)
 public final class MouseModNeoForge {

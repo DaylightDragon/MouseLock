@@ -6,7 +6,7 @@ import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import org.daylight.MouseLock;
 
 @EventBusSubscriber(modid = MouseLock.MOD_ID)
-public class InputEvents {
+public class NeoForgeInputEvents {
     @SubscribeEvent
     public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
     }

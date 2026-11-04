@@ -27,12 +27,5 @@ versionRange = "[26.3,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.mouselock]]
-modId = "forgeconfigapiport"
-type = "required"
-versionRange = "[26.3,)"
-ordering = "NONE"
-side = "CLIENT"
-
 [[mixins]]
 config = "mouselock.mixins.json"

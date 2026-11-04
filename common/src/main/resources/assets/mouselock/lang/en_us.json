@@ -6,5 +6,15 @@
   "mouselock.configuration.textHorizontalPos": "Text Horizontal Position",
   "mouselock.configuration.textVerticalPos": "Text Vertical Position",
   "mouselock.configuration.reactToHotbarHeight": "React to Hotbar Height",
-  "mouselock.configuration.resetOnWorldChange": "Reset on Leaving a World"
+  "mouselock.configuration.resetOnWorldChange": "Reset on Leaving a World",
+
+  "mouselock.configuration.title": "Mouse Lock Configuration",
+  "mouselock.configuration.textSize.tooltip": "Scale of the \"Mouse Locked\" overlay text, in percent.\n100% = default size, 50% = half size, 200% = twice as large.",
+  "mouselock.configuration.textHorizontalPos.tooltip": "Horizontal position of the overlay text, in percent of the window width.\n0% = left edge, 50% = center, 100% = right edge.",
+  "mouselock.configuration.textVerticalPos.tooltip": "Vertical position of the overlay text, in percent of the window height.\n0% = top edge, 100% = bottom edge.",
+  "mouselock.configuration.reactToHotbarHeight.tooltip": "If enabled, the overlay text automatically shifts down in game modes without a health bar,\n matching vanilla item name behavior.",
+  "mouselock.configuration.resetOnWorldChange.tooltip": "If enabled, the mouse lock state is reset when leaving or switching worlds.",
+
+  "mouselock.configuration.section.mouselock.client.toml": "Settings",
+  "mouselock.configuration.section.mouselock.client.toml.title": "Mouse Lock Settings"
 }

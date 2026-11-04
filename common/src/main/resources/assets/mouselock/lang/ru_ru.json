@@ -1,0 +1,20 @@
+{
+  "key.category.mouselock.main": "Блокировка движения мыши",
+  "key.mouselock.toggle_mouse_lock": "Включить/выключить блокировку мыши",
+
+  "mouselock.configuration.textSize": "Размер текста-оверлея",
+  "mouselock.configuration.textHorizontalPos": "Положение текста по горизонтали",
+  "mouselock.configuration.textVerticalPos": "Положение текста по вертикали",
+  "mouselock.configuration.reactToHotbarHeight": "Учитывать высоту хотбара",
+  "mouselock.configuration.resetOnWorldChange": "Сбрасывать при покидании мира",
+
+  "mouselock.configuration.title": "Настройки блокировки мыши",
+  "mouselock.configuration.textSize.tooltip": "Масштаб текста \"Mouse Locked\" в процентах.\n100% — обычный размер, 50% — половина, 200% — вдвое больше.",
+  "mouselock.configuration.textHorizontalPos.tooltip": "Положение текста по горизонтали в процентах от ширины окна.\n0% — левый край, 50% — центр, 100% — правый край.",
+  "mouselock.configuration.textVerticalPos.tooltip": "Положение текста по вертикали в процентах от высоты окна.\n0% — верхний край, 100% — нижний край.",
+  "mouselock.configuration.reactToHotbarHeight.tooltip": "Если включено, текст автоматически смещается вниз в режимах без полосы здоровья\n как и название предмета в руке.",
+  "mouselock.configuration.resetOnWorldChange.tooltip": "Если включено, состояние блокировки мыши сбрасывается при выходе из мира или переключении между мирами.",
+
+  "mouselock.configuration.section.mouselock.client.toml": "Настройки",
+  "mouselock.configuration.section.mouselock.client.toml.title": "Настройки блокировки мыши"
+}

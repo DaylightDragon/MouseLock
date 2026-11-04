@@ -1,6 +1,5 @@
 package org.daylight.neoforge.event;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -9,7 +8,7 @@ import org.daylight.MouseLock;
 import org.daylight.gui.MouseLockedOverlay;
 
 @EventBusSubscriber(modid = MouseLock.MOD_ID)
-public class GuiEvents {
+public class NeoForgeGuiEvents {
     @SubscribeEvent
     public static void onRegisterGuiLayers(RegisterGuiLayersEvent event) {
         event.registerBelowAll(
