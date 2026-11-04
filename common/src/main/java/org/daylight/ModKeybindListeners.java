@@ -9,7 +9,7 @@ import org.daylight.util.hotkey.IHotkeyListener;
 import java.util.function.Supplier;
 
 public class ModKeybindListeners {
-    public static final Supplier<Boolean> DEFAULT_VALIDATOR = () -> Minecraft.getInstance().gui.screen() == null;
+    public static final Supplier<Boolean> DEFAULT_VALIDATOR = () -> Minecraft.getInstance().screen == null;
 
     public static KeyMapping.Category KEYBIND_CATEGORY;
 

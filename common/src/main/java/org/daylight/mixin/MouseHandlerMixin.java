@@ -23,7 +23,7 @@ public class MouseHandlerMixin {
             cancellable = true
     )
     public void onMove(long handle, double xpos, double ypos, CallbackInfo ci) {
-        if(State.MOUSE_LOCK_ACTIVE && Minecraft.getInstance().gui.screen() == null) {
+        if(State.MOUSE_LOCK_ACTIVE && Minecraft.getInstance().screen == null) {
             this.xpos = xpos;
             this.ypos = ypos;
             ci.cancel();

@@ -21,7 +21,7 @@ public class NeoForgeCommands {
                             ModContainer container = ModList.get().getModContainerById(MouseLock.MOD_ID).orElse(null);
                             if (container == null) return Command.SINGLE_SUCCESS;
 
-                            Minecraft.getInstance().setScreenAndShow(new ConfigurationScreen(container, Minecraft.getInstance().gui.screen()));
+                            Minecraft.getInstance().setScreenAndShow(new ConfigurationScreen(container, Minecraft.getInstance().screen));
                             return Command.SINGLE_SUCCESS;
                         })
                 )
