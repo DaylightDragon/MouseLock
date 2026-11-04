@@ -3,23 +3,22 @@
   "id": "mouselock",
   "version": "${version}",
   "name": "Mouse Lock",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Toggle mouse locking to assist you with repetitive tasks where you need to go in a straight line, such as farming, planting crops when already aligned to an angle.",
   "authors": [
-    "Me!"
+    "D4ylight"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/DaylightDragon/MouseLock"
   },
   "license": "MIT",
   "icon": "assets/mouselock/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "org.daylight.fabric.MouseLockFabric"
     ],
     "client": [
-      "org.daylight.fabric.client.ExampleModFabricClient"
+      "org.daylight.fabric.client.MouseLockFabricClient"
     ],
     "modmenu": [
       "org.daylight.fabric.client.MouseLockModMenu"
