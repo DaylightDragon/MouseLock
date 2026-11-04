@@ -1,4 +1,10 @@
 {
   "key.category.mouselock.main": "Mouse Locking",
-  "key.mouselock.toggle_mouse_lock": "Toggle Mouse Lock"
+  "key.mouselock.toggle_mouse_lock": "Toggle Mouse Lock",
+
+  "mouselock.configuration.textSize": "Text Size",
+  "mouselock.configuration.textHorizontalPos": "Text Horizontal Position",
+  "mouselock.configuration.textVerticalPos": "Text Vertical Position",
+  "mouselock.configuration.reactToHotbarHeight": "React to Hotbar Height",
+  "mouselock.configuration.resetOnWorldChange": "Reset on Leaving a World"
 }

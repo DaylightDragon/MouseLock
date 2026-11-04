@@ -36,6 +36,8 @@ dependencies {
 
     common(project(path: ':common')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
+
+    compileOnlyApi("fuzs.forgeconfigapiport:forgeconfigapiport-neoforge:26.3.1")
 }
 
 processResources {

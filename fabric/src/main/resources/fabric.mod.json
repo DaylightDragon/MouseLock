@@ -16,10 +16,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "org.daylight.fabric.MouseModFabric"
+      "org.daylight.fabric.MouseLockFabric"
     ],
     "client": [
       "org.daylight.fabric.client.ExampleModFabricClient"
+    ],
+    "modmenu": [
+      "org.daylight.fabric.client.MouseLockModMenu"
     ]
   },
   "mixins": [
@@ -29,9 +32,10 @@
     "fabricloader": ">=0.20.1",
     "minecraft": "~26.3",
     "java": ">=25",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "forgeconfigapiport": "*"
   },
   "suggests": {
-    "another-mod": "*"
+    "modmenu": "*"
   }
 }
