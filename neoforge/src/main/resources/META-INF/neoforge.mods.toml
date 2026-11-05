@@ -17,14 +17,14 @@ bannerFile = "assets/mouselock/banner.png"
 [[dependencies.mouselock]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.5,)"
+versionRange = "[21.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.mouselock]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.5,)"
+versionRange = "[1.21.4,)"
 ordering = "NONE"
 side = "BOTH"
 
