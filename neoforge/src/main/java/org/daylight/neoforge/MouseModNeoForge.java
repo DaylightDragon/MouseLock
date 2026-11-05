@@ -1,19 +1,18 @@
 package org.daylight.neoforge;
 
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.Mod;
 
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.neoforge.client.gui.ConfigurationScreen;
-import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import org.daylight.MouseLock;
 import org.daylight.config.MouseLockConfig;
 
 @Mod(MouseLock.MOD_ID)
 public final class MouseModNeoForge {
     public MouseModNeoForge(ModContainer container) {
-        container.registerConfig(ModConfig.Type.CLIENT, MouseLockConfig.SPEC);
-        container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MouseLockConfig.SPEC);
+//        container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
 
         MouseLock.init();
 

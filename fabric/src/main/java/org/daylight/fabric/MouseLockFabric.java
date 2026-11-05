@@ -1,11 +1,9 @@
 package org.daylight.fabric;
 
+import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import fuzs.forgeconfigapiport.fabric.api.neoforge.v4.NeoForgeConfigRegistry;
-import fuzs.forgeconfigapiport.fabric.api.neoforge.v4.client.ConfigScreenFactoryRegistry;
 import net.fabricmc.api.ModInitializer;
-
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import org.daylight.MouseLock;
 import org.daylight.config.MouseLockConfig;
 import org.daylight.fabric.client.FabricCommands;
@@ -22,10 +20,10 @@ public final class MouseLockFabric implements ModInitializer {
                 ModConfig.Type.CLIENT,
                 MouseLockConfig.SPEC
         );
-        ConfigScreenFactoryRegistry.INSTANCE.register(
-                MouseLock.MOD_ID,
-                ConfigurationScreen::new
-        );
+//        ConfigScreenFactoryRegistry.INSTANCE.register(
+//                MouseLock.MOD_ID,
+//                ConfigurationScreen::new
+//        );
 
         MouseLock.init();
 

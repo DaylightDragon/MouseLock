@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+issueTrackerURL = "https://github.com/DaylightDragon/MouseLock/issues"
+license = "MIT"
+
+[[mods]]
+modId = "mouselock"
+version = "${version}"
+displayName = "Mouse Lock"
+authors = "D4ylight"
+description = '''
+Toggle mouse locking to assist you with repetitive tasks where you need to go in a straight line, such as farming, planting crops when already aligned to an angle.
+'''
+iconFile = "assets/mouselock/icon.png"
+bannerFile = "assets/mouselock/banner.png"
+
+[[dependencies.mouselock]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mouselock]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "mouselock.mixins.json"

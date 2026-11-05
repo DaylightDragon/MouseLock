@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.client.Minecraft;
-import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import org.daylight.MouseLock;
 import org.daylight.data.State;
 
@@ -21,8 +20,8 @@ public class FabricCommands {
                                 State.MOUSE_LOCK_ACTIVE = !State.MOUSE_LOCK_ACTIVE;
                                 return Command.SINGLE_SUCCESS;
                             })
-                            .then(ClientCommandManager.literal("settings")
-                                    .executes(source -> openConfigScreen()))
+//                            .then(ClientCommandManager.literal("settings")
+//                                    .executes(source -> openConfigScreen()))
             );
         });
     }

@@ -19,9 +19,6 @@
     ],
     "client": [
       "org.daylight.fabric.client.MouseLockFabricClient"
-    ],
-    "modmenu": [
-      "org.daylight.fabric.client.MouseLockModMenu"
     ]
   },
   "mixins": [
@@ -29,8 +26,8 @@
   ],
   "depends": {
     "fabricloader": ">=0.20.1",
-    "minecraft": ">=1.21.1",
-    "java": ">=21",
+    "minecraft": ">=1.20.4",
+    "java": ">=17",
     "fabric-api": "*",
     "forgeconfigapiport": "*"
   },

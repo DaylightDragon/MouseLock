@@ -1,5 +1,6 @@
 package org.daylight.config;
 
+
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class MouseLockConfig {

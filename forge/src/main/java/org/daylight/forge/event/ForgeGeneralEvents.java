@@ -1,17 +1,17 @@
-package org.daylight.neoforge.event;
+package org.daylight.forge.event;
 
 import net.minecraft.client.KeyMapping;
 import net.minecraft.resources.ResourceLocation;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.RegisterClientCommandsEvent;
-import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
+import net.minecraftforge.client.event.RegisterClientCommandsEvent;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import org.daylight.ModKeybindListeners;
 import org.daylight.MouseLock;
-import org.daylight.neoforge.NeoForgeCommands;
+import org.daylight.forge.ForgeCommands;
 
-@EventBusSubscriber(modid = MouseLock.MOD_ID)
-public class NeoForgeGeneralEvents {
+@Mod.EventBusSubscriber(modid = MouseLock.MOD_ID)
+public class ForgeGeneralEvents {
     @SubscribeEvent
     public static void onRegisterKeyMappings(RegisterKeyMappingsEvent event) {
         ModKeybindListeners.initCommonKeybinds();
@@ -21,6 +21,6 @@ public class NeoForgeGeneralEvents {
 
     @SubscribeEvent
     public static void onRegisterClientCommands(RegisterClientCommandsEvent event) {
-        event.getDispatcher().register(NeoForgeCommands.register());
+        event.getDispatcher().register(ForgeCommands.register());
     }
 }

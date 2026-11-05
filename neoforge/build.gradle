@@ -37,13 +37,14 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 
-    compileOnlyApi("fuzs.forgeconfigapiport:forgeconfigapiport-neoforge:$rootProject.forge_config_api_port_version")
+    compileOnly("fuzs.forgeconfigapiport:forgeconfigapiport-neoforge:$rootProject.forge_config_api_port_version")
+    runtimeOnly("fuzs.forgeconfigapiport:forgeconfigapiport-neoforge:$rootProject.forge_config_api_port_version")
 }
 
 processResources {
     inputs.property 'version', project.version
 
-    filesMatching('META-INF/neoforge.mods.toml') {
+    filesMatching('META-INF/mods.toml') {
         expand version: inputs.properties.version
     }
 }
