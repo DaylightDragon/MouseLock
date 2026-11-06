@@ -5,8 +5,8 @@ import org.daylight.gui.MouseLockedOverlay;
 
 public class FabricHud {
     public static void init() {
-        HudRenderCallback.EVENT.register((guiGraphics, tickCounter) -> {
-            MouseLockedOverlay.drawIfNeeded(guiGraphics);
+        HudRenderCallback.EVENT.register((matrixStack, tickDelta) -> {
+            MouseLockedOverlay.drawIfNeeded(matrixStack);
         });
     }
 }

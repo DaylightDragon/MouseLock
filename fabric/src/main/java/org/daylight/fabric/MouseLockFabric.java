@@ -1,7 +1,7 @@
 package org.daylight.fabric;
 
-import fuzs.forgeconfigapiport.api.config.v2.ForgeConfigRegistry;
 import net.fabricmc.api.ModInitializer;
+import net.minecraftforge.api.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
 import org.daylight.MouseLock;
 import org.daylight.config.MouseLockConfig;
@@ -13,7 +13,7 @@ import org.daylight.fabric.client.events.FabricGeneralEvents;
 public final class MouseLockFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        ForgeConfigRegistry.INSTANCE.register(
+        ModLoadingContext.registerConfig(
                 MouseLock.MOD_ID,
                 ModConfig.Type.CLIENT,
                 MouseLockConfig.SPEC

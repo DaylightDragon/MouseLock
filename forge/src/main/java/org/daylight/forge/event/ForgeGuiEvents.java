@@ -13,8 +13,8 @@ public class ForgeGuiEvents {
     public static void onRegisterGuiLayers(RegisterGuiOverlaysEvent event) {
         event.registerBelowAll(
                 "mouse_locked_text_overlay", // not sure if this should be without a namespace. 1.20.4- requires a String
-                (forgeGui, guiGraphics, f, i, j) -> {
-                    MouseLockedOverlay.drawIfNeeded(guiGraphics);
+                (forgeGui, matrixStack, f, i, j) -> {
+                    MouseLockedOverlay.drawIfNeeded(matrixStack);
                 }
         );
     }

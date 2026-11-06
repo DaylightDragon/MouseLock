@@ -35,10 +35,13 @@ dependencies {
 
 //    compileOnlyApi("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:$rootProject.forge_config_api_port_version")
 //    localRuntime("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:$rootProject.forge_config_api_port_version")
-    modCompileOnly("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:$rootProject.forge_config_api_port_version")
-    modRuntimeOnly("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:$rootProject.forge_config_api_port_version")
+    modCompileOnly("net.minecraftforge:forgeconfigapiport-fabric:$rootProject.forge_config_api_port_version")
+    modRuntimeOnly("net.minecraftforge:forgeconfigapiport-fabric:$rootProject.forge_config_api_port_version")
     modCompileOnly("com.terraformersmc:modmenu:$rootProject.mod_menu_version")
     modRuntimeOnly("com.terraformersmc:modmenu:$rootProject.mod_menu_version")
+
+//    compileOnly(include("com.electronwill.night-config:core:3.6.5"))
+//    compileOnly(include("com.electronwill.night-config:toml:3.6.5"))
 }
 
 processResources {
