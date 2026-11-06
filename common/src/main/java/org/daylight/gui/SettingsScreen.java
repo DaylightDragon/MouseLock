@@ -74,6 +74,7 @@ public class SettingsScreen extends Screen {
     @Override
     public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
         super.render(graphics, mouseX, mouseY, partialTick);
+        renderBackground(graphics);
 
         int leftX = (this.width - ROW_WIDTH) / 2;
         int textX = leftX + 5; // Небольшой отступ от края

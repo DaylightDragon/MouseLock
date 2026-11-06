@@ -1,6 +1,6 @@
 package org.daylight.fabric;
 
-import fuzs.forgeconfigapiport.fabric.api.forge.v4.ForgeConfigRegistry;
+import fuzs.forgeconfigapiport.api.config.v2.ForgeConfigRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.minecraftforge.fml.config.ModConfig;
 import org.daylight.MouseLock;
