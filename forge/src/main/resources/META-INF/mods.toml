@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[41,)"
+loaderVersion = "[36,)"
 issueTrackerURL = "https://github.com/DaylightDragon/MouseLock/issues"
 license = "MIT"
 
@@ -16,13 +16,13 @@ logoFile = "assets/mouselock/icon.png"
 [[dependencies.mouselock]]
 modId = "forge"
 mandatory = true
-versionRange = "[41,)"
+versionRange = "[36,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.mouselock]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19,)"
+versionRange = "[1.16.5,)"
 ordering = "NONE"
 side = "BOTH"
