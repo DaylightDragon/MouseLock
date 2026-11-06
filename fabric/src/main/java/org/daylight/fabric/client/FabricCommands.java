@@ -20,8 +20,8 @@ public class FabricCommands {
                                 State.MOUSE_LOCK_ACTIVE = !State.MOUSE_LOCK_ACTIVE;
                                 return Command.SINGLE_SUCCESS;
                             })
-//                            .then(ClientCommandManager.literal("settings")
-//                                    .executes(source -> openConfigScreen()))
+                            .then(ClientCommandManager.literal("settings")
+                                    .executes(source -> openConfigScreen()))
             );
         });
     }

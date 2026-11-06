@@ -4,9 +4,11 @@
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "client": [
+    "MinecraftMixin",
     "MouseHandlerMixin"
   ],
   "mixins": [
+    "MinecraftServerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

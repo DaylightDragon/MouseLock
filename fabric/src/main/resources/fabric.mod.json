@@ -19,6 +19,9 @@
     ],
     "client": [
       "org.daylight.fabric.client.MouseLockFabricClient"
+    ],
+    "modmenu": [
+      "org.daylight.fabric.client.MouseLockModMenu"
     ]
   },
   "mixins": [

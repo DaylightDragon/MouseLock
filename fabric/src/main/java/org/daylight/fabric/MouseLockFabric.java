@@ -10,7 +10,6 @@ import org.daylight.fabric.client.FabricCommands;
 import org.daylight.fabric.client.FabricHud;
 import org.daylight.fabric.client.FabricKeybinds;
 import org.daylight.fabric.client.events.FabricGeneralEvents;
-import org.daylight.fabric.client.events.FabricWorldEvents;
 
 public final class MouseLockFabric implements ModInitializer {
     @Override
@@ -25,6 +24,7 @@ public final class MouseLockFabric implements ModInitializer {
 //                ConfigurationScreen::new
 //        );
 
+
         MouseLock.init();
 
         FabricKeybinds.init();
@@ -36,6 +36,5 @@ public final class MouseLockFabric implements ModInitializer {
 
     private void registerEvents() {
         FabricGeneralEvents.init();
-        FabricWorldEvents.init();
     }
 }

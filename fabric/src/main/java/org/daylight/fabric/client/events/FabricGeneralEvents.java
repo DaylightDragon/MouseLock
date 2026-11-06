@@ -6,6 +6,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import org.daylight.MouseLock;
 import org.daylight.data.State;
+import org.daylight.gui.SettingsScreen;
 import org.daylight.util.graphics.DummyScreen;
 
 public class FabricGeneralEvents {
@@ -19,7 +20,7 @@ public class FabricGeneralEvents {
         if(!State.SHOULD_OPEN_SETTINGS) return;
         State.SHOULD_OPEN_SETTINGS = false;
 
-        Screen dummyParent = new DummyScreen();
-//        Minecraft.getInstance().forceSetScreen(new ConfigurationScreen(MouseLock.MOD_ID, dummyParent)); // shouldn't be null or dummy screen if ever called not from chat
+//        Screen dummyParent = new DummyScreen();
+        Minecraft.getInstance().forceSetScreen(new SettingsScreen(null)); // shouldn't be null or dummy screen if ever called not from chat
     }
 }
