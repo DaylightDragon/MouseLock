@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.daylight.MouseLock;
 import org.daylight.gui.MouseLockedOverlay;
 
-@Mod.EventBusSubscriber(modid = MouseLock.MOD_ID)
+@Mod.EventBusSubscriber(modid = MouseLock.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ForgeGuiEvents {
     @SubscribeEvent
     public static void onRegisterGuiLayers(RegisterGuiOverlaysEvent event) {

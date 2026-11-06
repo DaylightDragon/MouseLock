@@ -9,6 +9,7 @@ import net.minecraft.commands.Commands;
 import net.minecraftforge.fml.ModContainer;import net.minecraftforge.fml.ModList;import org.daylight.MouseLock;
 import org.daylight.config.MouseLockConfig;
 import org.daylight.data.State;
+import org.daylight.gui.SettingsScreen;
 
 public class ForgeCommands {
     public static LiteralArgumentBuilder<CommandSourceStack> register() {
@@ -18,7 +19,7 @@ public class ForgeCommands {
                             ModContainer container = ModList.get().getModContainerById(MouseLock.MOD_ID).orElse(null);
                             if (container == null) return Command.SINGLE_SUCCESS;
 
-                            Minecraft.getInstance().forceSetScreen(new ConfigurationScreen(container, Minecraft.getInstance().screen));
+                            Minecraft.getInstance().forceSetScreen(new SettingsScreen(null));
                             return Command.SINGLE_SUCCESS;
                         })
                 )

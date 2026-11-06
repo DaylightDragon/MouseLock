@@ -1,19 +1,19 @@
 package org.daylight.config;
 
 
-import net.neoforged.neoforge.common.ModConfigSpec;
+import net.minecraftforge.common.ForgeConfigSpec;
 
 public class MouseLockConfig {
-    public static final ModConfigSpec SPEC;
+    public static final ForgeConfigSpec SPEC;
 
-    public static final ModConfigSpec.IntValue TEXT_SIZE;
-    public static final ModConfigSpec.IntValue TEXT_HORIZONTAL_POS;
-    public static final ModConfigSpec.IntValue TEXT_VERTICAL_POS;
-    public static final ModConfigSpec.BooleanValue REACT_TO_HOTBAR_HEIGHT;
-    public static final ModConfigSpec.BooleanValue RESET_ON_WORLD_CHANGE;
+    public static final ForgeConfigSpec.IntValue TEXT_SIZE;
+    public static final ForgeConfigSpec.IntValue TEXT_HORIZONTAL_POS;
+    public static final ForgeConfigSpec.IntValue TEXT_VERTICAL_POS;
+    public static final ForgeConfigSpec.BooleanValue REACT_TO_HOTBAR_HEIGHT;
+    public static final ForgeConfigSpec.BooleanValue RESET_ON_WORLD_CHANGE;
 
     static {
-        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
+        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
 
 //        builder.push("overlay");
 

@@ -1,12 +1,13 @@
 package org.daylight.forge;
 
 import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.common.MinecraftForge;
 import org.daylight.ModKeybindListeners;
 import org.daylight.util.hotkey.InputBasedHotkeyListener;
 
 public class ForgeKeybinds {
     public static void init() {
-        Forge.EVENT_BUS.addListener(ForgeKeybinds::onKeyInput);
+        MinecraftForge.EVENT_BUS.addListener(ForgeKeybinds::onKeyInput);
         initCustomKeybinds();
     }
 

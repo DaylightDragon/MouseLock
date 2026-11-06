@@ -9,7 +9,7 @@ import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
-import net.neoforged.neoforge.common.ModConfigSpec;
+import net.minecraftforge.common.ForgeConfigSpec;
 import org.daylight.config.MouseLockConfig;
 
 public class SettingsScreen extends Screen {
@@ -100,7 +100,7 @@ public class SettingsScreen extends Screen {
         this.minecraft.setScreen(this.parent);
     }
 
-    private AbstractWidget createIntSlider(int x, int y, int width, ModConfigSpec.IntValue configValue, int min, int max) {
+    private AbstractWidget createIntSlider(int x, int y, int width, ForgeConfigSpec.IntValue configValue, int min, int max) {
         OptionInstance<Integer> instance = new OptionInstance<>(
                 "",
                 OptionInstance.noTooltip(),
