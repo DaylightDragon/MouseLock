@@ -7,8 +7,8 @@ import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
 import org.daylight.MouseLock;
 import org.daylight.gui.MouseLockedOverlay;
 
-@EventBusSubscriber(modid = MouseLock.MOD_ID)
-public class NeoForgeGuiEvents {
+@EventBusSubscriber(modid = MouseLock.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+public class NeoForgeGuiEventsMB {
     @SubscribeEvent
     public static void onRegisterGuiLayers(RegisterGuiLayersEvent event) {
         event.registerBelowAll(

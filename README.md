@@ -1,6 +1,6 @@
 # Mouse Lock
 
-This branch uses Temurin JDK 21
+This branch uses Temurin JDK 21 (the real one, not language level)
 
 1.21.2 was skipped due to Forge Config API Port not supporting it
 
