@@ -6,3 +6,6 @@ neoforge/build
 fabric/build
 neoforge/run
 fabric/run
+forge/run
+forge/build
+.architectury-transformer
